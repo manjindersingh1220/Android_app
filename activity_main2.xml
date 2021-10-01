@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="#ffffff"
+        android:background="@color/red"
+        app:title="When to order CAIPS/GCMS"
+        ></androidx.appcompat.widget.Toolbar>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="When to order CAIPS/ GCMS?"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textSize="24dp"
+                android:textColor="@color/red"
+                ></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textSize="16dp"
+                android:paddingBottom="8dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="16dp"
+                android:textColor="#000000"
+                android:justificationMode="inter_word"
+                android:text="Your immigration application taking too long to process? Your application  got refused or you got an interview? or you are just curious to know what went into processing and see the comments on your application from a immigration officer?"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textSize="16dp"
+
+                android:paddingBottom="8dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="16dp"
+                android:textColor="#000000"
+                android:justificationMode="inter_word"
+                android:text="These notes can be ordered by a Canadian Citizen or Permanent resident only, under Access to Information Act."
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read more"
+                android:textColor="@color/red"
+                android:paddingLeft="24dp"
+                android:id="@+id/textviewsecond"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/ic_send_24"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/ic_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:subtitleTextColor="#ffffff"
+        android:background="@color/red"
+        android:id="@+id/toolbar_admin_chat"
+        ></androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="#e6e6e6"
+        android:id="@+id/recylerViewTimer"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/admin_recylerview"
+            android:background="#e6e6e6"
+            android:layout_weight="1"
+
+             />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@drawable/back"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="2dp"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_attach_file_24"
+            android:layout_weight="0.5"
+            android:id="@+id/admin_attach"
+            android:padding="8dp"
+            ></ImageView>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/admin_msg_edit"
+            android:layout_weight="2"
+            android:hint="Enter message"
+            android:background="@drawable/back"
+            ></EditText>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send_24"
+            android:padding="8dp"
+            android:id="@+id/admin_send_btn"
+            android:layout_weight="0.5"
+            ></ImageView>
+    </LinearLayout>
+
+</LinearLayout>
